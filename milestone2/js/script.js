@@ -66,10 +66,10 @@ let lista = document.getElementById('lista');
 
 for(let key of partners ){
 
-  let all = `${key.nome} - ${key.ruolo} -  ${key.foto}`
+  let all = `<li>${key.nome} - ${key.ruolo} -  ${key.foto}</li> <hr>`
 
+  lista.innerHTML += all
 
   console.log(all);
 
 }
-
